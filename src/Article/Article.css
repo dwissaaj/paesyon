@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --pastel-pink : #F4BFBF
+}
+.articleClass{
+    background-color: var(--pastel-pink);
+    margin-top: 30px;
+}
+
+.swiper-button-next{
+    color: black !important;
+    margin-right: 40px !important;
+}
+.swiper-button-prev{
+    color: black !important;
+    margin-left: 40px !important;
+}
+.cardContent{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.cardTitle{
+    margin-bottom: 0;
+    margin-top: 5px;
+    
+    font-family: 'Roboto';
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+}
+.cardArt{
+    height: 150px;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    font-family: 'Merriweather';
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: justify;
+
+}
+.cardLink{
+    margin-left: 5px;
+    padding: 2px;
+    font-family: 'Dancing Script';
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.cardLink:hover{
+    color: #8CC0DE;
+}
