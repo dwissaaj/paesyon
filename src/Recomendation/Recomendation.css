@@ -8,19 +8,17 @@
     margin-right: auto !important;
 }
 .btnRec{
-    background-color: #FFE6E6; 
+    background-color: #FFE6E6 !important; 
     font-family: 'Roboto';
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 15px;
     height: 30px;
     width: 150px;
     text-align: center;
 
 }
-.btnRec:hover{
-    background-color: #F2D1D1; 
-}
+
 .cardAction{
     height: 50px;
     justify-content: center;
@@ -37,4 +35,13 @@
     font-weight: bold;
     color: #ECB390;
     font-size: 30px;
+}
+
+.recomenCard{
+    font-family: 'Merriweather' !important;
+    background-color: #ECB390;
+    font-size: 15px;
+    color: black;
+    width: 200px;
+
 }
