@@ -1,0 +1,22 @@
+article{
+    padding: 10px 80px 40px 100px;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+img {
+    float: left;
+    height: 500px;
+    padding-right: 20px;
+
+
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
