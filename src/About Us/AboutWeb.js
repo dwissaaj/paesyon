@@ -1,3 +1,5 @@
+import './AboutUs.css'
+
 const AboutWeb = () => {
   return (
     <section className="flex">

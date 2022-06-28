@@ -1,3 +1,4 @@
+import "./BreakSection.css"
 const BreakSection = () => {
     return (
       <section className="flex bg-white">

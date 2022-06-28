@@ -1,3 +1,5 @@
+import './AboutUs.css'
+
 const AboutTeam = () => {
   return (
     <section className="flex">
