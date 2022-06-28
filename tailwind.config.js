@@ -11,7 +11,7 @@ module.exports = {
       'xl': {'min': '1718px'},
       '2xl': {'min': '1903px'},
       '3xl': {'min': '2308px'},
-    }
+    },
   },
   plugins: [],
 }
