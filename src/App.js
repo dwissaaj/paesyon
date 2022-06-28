@@ -6,6 +6,7 @@ import Article from './Article/Article';
 import Navbar from './Navbar/Navbar';
 import Recomendation from './Recomendation/Recomendation';
 import BreakSection from './BreakSection/BreakSection';
+import SingleArticle from './singleArticle/SingleArticle';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <AboutTeam/>
       <Recomendation/>
       <Article/>
+      <SingleArticle/>
     </div>
   );
 }
