@@ -1,5 +1,5 @@
-import './Navbar.css'
-const Navbar = () => {
+import './NavigationBar.css'
+const NavigationBar = () => {
     return ( 
     <header className="headerCustom">
         <div className="containerCustom">
@@ -29,4 +29,4 @@ const Navbar = () => {
      );
 }
 
-export default Navbar;
+export default NavigationBar;

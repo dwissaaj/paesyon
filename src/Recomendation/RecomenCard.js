@@ -4,10 +4,10 @@ import { Button, CardActions, CardMedia, Grid } from "@mui/material";
 const RecomenCard = (props) => {
     return ( 
         <Card sx={{width:250}}>
-                <CardMedia component="img" height="250" image={props.image}/>
+                <CardMedia component="img" height="250" image={props.urlImg}/>
                 <CardActions className="cardAction">
-                    <Button  className="recomenCard" href="https://gitlab.com/paesyon/paesyon/-/tree/development/src" target="_blank">
-                        {props.shop}
+                    <Button  className="recomenCard" href={props.urlShop} target="_blank">
+                        {props.title}
                     </Button>
                 </CardActions>
         </Card>

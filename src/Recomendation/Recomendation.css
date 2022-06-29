@@ -39,9 +39,15 @@
 
 .recomenCard{
     font-family: 'Merriweather' !important;
-    background-color: #ECB390;
-    font-size: 15px;
-    color: black;
+    background-color: #ECB390 !important;
+    font-size: 15px !important;
+    color: black !important;
     width: 200px;
+
+}
+.recomenCard:hover{
+
+    background-color: #bd8a6a !important;
+
 
 }

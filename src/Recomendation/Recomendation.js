@@ -6,13 +6,19 @@ import { Grid } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pagination } from "swiper";
 import RecomenCard from "./RecomenCard";
+import axios from "axios";
+import apiRecomendation from "../config/apiRecomendation";
 const Recomendation = () => {
-    const [data,setData] = useState([
-        {id:1,image:photo_1,shop:'Tokopedia'}
-    ])
+    const [rec,setRec] = useState([]);
+    useEffect(() => {
+        apiRecomendation.find().then((res) => {
+            setRec(res.data);
+        });
+    },[])
+    console.log(rec)
     return ( 
         <Container className="conRec">
             <Grid>
@@ -20,35 +26,43 @@ const Recomendation = () => {
                 <p className="cardRecSubTitle">Trend Fashion Around You</p>
             </Grid >
             <Swiper pagination={true} modules={[Pagination]} >
-                <SwiperSlide>
-                <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between'}}>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                </Grid>
-                <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between',marginBottom:5}}>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/> 
-                </Grid>
-                </SwiperSlide>
+                
+                {rec?.map((data) => {
+                        return (
+                            <>
+                            <SwiperSlide>
+                            <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between'}}>
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />       
+                            </Grid>
+                            <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between'}}>
+                            <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />  
+                            </Grid>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between'}}>
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />       
+                            </Grid>
+                            <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between'}}>
+                            <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />    
+                                <RecomenCard urlShop={data.attributes.urlShop} urlImg={data.attributes.urlImg} title={data.attributes.title} />  
+                            </Grid>
+                            </SwiperSlide>
+                            </>
+                        )
+                    })}
+                
 
-                <SwiperSlide>
-                <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between'}}>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                </Grid>
-                <Grid  sx={{display:'flex',padding:2,justifyContent:'space-between',marginBottom:5}}>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/>
-                    <RecomenCard shop={data[0].shop} image={data[0].image}/> 
-                </Grid>
-                </SwiperSlide>
             </Swiper>
                 
         </Container>
