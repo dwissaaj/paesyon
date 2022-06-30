@@ -5,20 +5,22 @@
 .p{
     text-align: justify;
     text-justify: inter-word;
+    font-family: "Merriweather";
+    font-size: 50px;
 }
 
 .img {
-    float: left;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
     padding-right: 20px;
-
-    
 }
 
 .h1{
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 100px;
     margin-bottom: 10px;
+    font-family: "Merriweather";
 }
 
 .preserve-whitespace {

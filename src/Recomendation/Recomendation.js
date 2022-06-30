@@ -18,7 +18,7 @@ const Recomendation = () => {
     },[])
     console.log(rec)
     return ( 
-        <Container className="conRec">
+        <Container className="conRec" id="recommendationHome">
             <Grid>
                 <p className="cardRecTitle">Recomendation</p>
                 <p className="cardRecSubTitle">Trend Fashion Around You</p>

@@ -14,7 +14,7 @@ export default function Footer () {
           <a className='icon1 icon--instagram' href='#'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
           <a className='icon1 icon--line' href='#'><FontAwesomeIcon icon={faLine}></FontAwesomeIcon></a>
         </div>
-        <p className='footerClass'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className='footerClass'>Self confident is your the best outfit</p>
       </div>
     </div>
   )

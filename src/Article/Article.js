@@ -16,74 +16,33 @@ const Article = () => {
             setArt(res.data);
         });
     },[])
-    console.log(art)
+    const page1 = [art[0], art[1], art[2], art[3]];
+    const page2 = [art[4], art[5], art[6], art[7]];
+    console.log(page1, "p");
+    console.log(art, "a");
     return ( 
-    <div>
+    <div id='articleHome'>
         <Swiper navigation={true} modules={[Navigation]} className="articleClass">
             <SwiperSlide>
                 <Grid sx={{display:'flex',padding:2,justifyContent:'space-evenly'}}>
-                    <Grid>
-                        {art?.map((data) => {
+                        {page1?.map((datas) => {
                             return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                                <Grid>
+                                    <ArticleCard data={datas}/>
+                                </Grid>
                             )
                         })}
-                    </Grid>
-                    <Grid>
-                    {art?.map((data) => {
-                            return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
-                            )
-                        })}
-                    </Grid> 
-                    <Grid>
-                    {art?.map((data) => {
-                            return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
-                            )
-                        })}
-                    </Grid> 
-                    <Grid>
-                    {art?.map((data) => {
-                            return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
-                            )
-                        })}
-                    </Grid>              
                 </Grid>
             </SwiperSlide>
             <SwiperSlide>
-            <Grid>
                 <Grid sx={{display:'flex',padding:2,justifyContent:'space-evenly'}}>
-                    <Grid>
-                    {art?.map((data) => {
+                        {page2?.map((datas) => {
                             return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                                <Grid>
+                                    <ArticleCard data={datas}/>
+                                </Grid>
                             )
-                        })}
-                    </Grid>
-                    <Grid>
-                    {art?.map((data) => {
-                            return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
-                            )
-                        })}
-                    </Grid> 
-                    <Grid>
-                    {art?.map((data) => {
-                            return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
-                            )
-                        })}
-                    </Grid> 
-                    <Grid>
-                    {art?.map((data) => {
-                            return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
-                            )
-                        })}
-                    </Grid>              
-                </Grid>
+                        })}       
                 </Grid>
             </SwiperSlide>
         </Swiper>

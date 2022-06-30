@@ -1,8 +1,6 @@
 /*----------Ask Us----------*/
 .sectionfooter {
-  background: -moz-linear-gradient(45deg, #F4BFBF 25%, #f5d894 50%, #fcd0b3 75%, #F4BFBF 100%); 
-  background: -webkit-linear-gradient(45deg, #F4BFBF 25%, #f5d894 50%,#fcd0b3 75%,#F4BFBF 100%); 
-  background: linear-gradient(45deg, #F4BFBF 25%, #f5d894 50%,#fcd0b3 75%,#F4BFBF 100%); 
+  background: #ECB390;
   display: block;
   text-align: center;
   align-items: center;

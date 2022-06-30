@@ -1,6 +1,6 @@
 import axios from "axios"
 const baseApi = axios.create({
-    baseURL:"http://strapipaesyon.herokuapp.com/api",
+    baseURL:"http://localhost:1337/api",
 });
 
 export default baseApi;

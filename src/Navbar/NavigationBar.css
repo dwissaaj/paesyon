@@ -667,3 +667,7 @@ video {
   --tw-text-opacity: 1;
   color: rgb(236 179 144 / var(--tw-text-opacity));
 }
+
+.headerCustomArticle {
+  background: #ECB390;
+}

@@ -5,21 +5,21 @@ const NavigationBar = () => {
         <div className="containerCustom">
           <div className="tittleNavbar">
             <div className="tittleNavbarText">
-              <a href=""> <span className="colorTextbase">PAES</span><span className="boldText">YEON</span></a>
+              <a href="/"> <span className="colorTextbase">PAES</span><span className="boldText">YON</span></a>
             </div>
             <nav>
               <ul className="contentNavbar colorTextbase">
                 <li className="marginContent">
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li className="marginContent">
-                  <a href="#">Article</a>
+                  <a href="#articleHome">Article</a>
                 </li>
                 <li className="marginContent">
-                  <a href="#">Recomendation</a>
+                  <a href="#recommendationHome">Recomendation</a>
                 </li>
                 <li className="marginContent">
-                  <a href="#">About us</a>
+                  <a href="#contactHome">Contact us</a>
                 </li>
               </ul>
             </nav>

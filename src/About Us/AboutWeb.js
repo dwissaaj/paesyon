@@ -1,4 +1,4 @@
-import './AboutUs.css'
+import "./AboutUs.css";
 
 const AboutWeb = () => {
   return (
@@ -7,32 +7,27 @@ const AboutWeb = () => {
         <div className="settingText-sectionAboutWeb">
           <div>
             <p className="headline-sectionAboutWeb">
-              explore your true style
+              Choose your favourite to go outfit.
             </p>
           </div>
           <div>
-            <p className="text-sectionAboutWeb">
-              for your day out
-            </p>
+            <p className="text-sectionAboutWeb">If you like it wear it.</p>
           </div>
         </div>
 
         <div className="visi-container">
-        <div className="setting-visiMisi">
-          <div>
-            <p className="headline-visiMisi">
-                Our Vision
-            </p>
-          </div>
-          <div>
-            <p className="text-visiMisi">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi accusamus illum exercitationem laborum praesentium magni.
-            </p>
+          <div className="setting-visiMisi">
+            <div>
+              <p className="headline-visiMisi">Our Vision</p>
+            </div>
+            <div>
+              <p className="text-visiMisi">
+                We want to give you information about fashion, so that
+                people are not confused about choosing the match fashion
+              </p>
+            </div>
           </div>
         </div>
-            
-        </div>
-
       </div>
       <div className="image-sectionAboutWeb">
         <img
