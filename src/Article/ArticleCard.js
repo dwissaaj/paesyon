@@ -14,8 +14,7 @@ const ArticleCard = (props) => {
                   <p className='cardArt'>{props.content}</p>
           </CardContent>
           <CardActions>
-                  <Link className='cardLink' to='/'>Read More..</Link>
-
+                  <p className='cardLink'>Read More..</p>
           </CardActions>
       </Card>
    );
