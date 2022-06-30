@@ -51,3 +51,11 @@
 
 
 }
+
+.recTitleCenter{
+    font-family: 'Merriweather';
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    margin-top: 20px;
+}

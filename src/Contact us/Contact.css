@@ -131,3 +131,14 @@ label {
   opacity: 0;
 }
 /*------x---Form---x------*/
+
+.thanksClass{
+  background: -moz-linear-gradient(45deg, #F4BFBF 25%, #FAF0D7 50%, #f5d894 75%); 
+  background: -webkit-linear-gradient(45deg, #F4BFBF 25%, #FAF0D7 50%, #f5d894 75%); 
+  background: linear-gradient(45deg, #F4BFBF 25%, #FAF0D7 50%, #f5d894 75%); 
+  background-color: #8CC0DE;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}

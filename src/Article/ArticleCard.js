@@ -14,9 +14,8 @@ const ArticleCard = (props) => {
                   <p className='cardArt'>{props.content}</p>
           </CardContent>
           <CardActions>
-                <Router>
-                  <Link className='cardLink' to={props.linkTo}>Read More..</Link>
-              </Router>
+                  <Link className='cardLink' to='/'>Read More..</Link>
+
           </CardActions>
       </Card>
    );

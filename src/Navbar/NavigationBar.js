@@ -1,6 +1,7 @@
+import { Link, NavLink } from 'react-router-dom';
 import './NavigationBar.css'
 const NavigationBar = () => {
-    return ( 
+    return (
     <header className="headerCustom">
         <div className="containerCustom">
           <div className="tittleNavbar">
@@ -16,16 +17,17 @@ const NavigationBar = () => {
                   <a href="#">Article</a>
                 </li>
                 <li className="marginContent">
-                  <a href="#">Recomendation</a>
+                  <NavLink to='recomendations'>Recomendation</NavLink>
                 </li>
                 <li className="marginContent">
-                  <a href="#">About us</a>
+                  <NavLink to='about-page'>About Us</NavLink>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
+  
      );
 }
 

@@ -2,8 +2,10 @@ import React from 'react'
 import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMessage,faEnvelope,faUser } from '@fortawesome/free-solid-svg-icons'
+import { Link, Outlet, useNavigate } from 'react-router-dom'
 
 export default function Contact() {
+  const navigate = useNavigate()
   return (
     <div className='ContactUs'>
       <div className='containerkotak'/>
@@ -29,8 +31,11 @@ export default function Contact() {
                 <span className="icon"><FontAwesomeIcon icon={faMessage}></FontAwesomeIcon></span> Pesan
               </label>
             </div>
+            <Link to="thanks">
             <button className="send" type='submit'><a href="#">Kirim</a></button>
-            <input className='reset' type="reset" value="Reset"></input>
+            </Link>
+            <input onClick={() => navigate(-1)} className='reset' type="reset" value="Reset"></input>
+            <Outlet className="outletClass"/>
           </div>
         </form>
       </div> 
