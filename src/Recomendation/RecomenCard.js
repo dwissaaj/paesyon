@@ -1,6 +1,6 @@
 import Card from '@mui/material/Card';
 
-import { Button, CardActions, CardMedia, Grid } from "@mui/material";
+import { Button, CardActions, CardMedia } from "@mui/material";
 const RecomenCard = (props) => {
     return ( 
         <Card sx={{width:250}}>

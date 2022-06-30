@@ -1,7 +1,6 @@
 
 import { Container } from "@mui/system";
 import './Recomendation.css'
-import photo_1 from '../assets/photo_1.jpg'
 import { Grid } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -9,7 +8,6 @@ import "swiper/css/pagination";
 import { useEffect, useState } from 'react';
 import { Pagination,Navigation } from "swiper";
 import RecomenCard from "./RecomenCard";
-import axios from "axios";
 import apiRecomendation from "../config/apiRecomendation";
 const Recomendation = () => {
     const [rec,setRec] = useState([]);

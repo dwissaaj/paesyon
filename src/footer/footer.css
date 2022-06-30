@@ -77,3 +77,7 @@
   40% {transform: rotate (-15deg);}
 }
 /*------x---Icon Socia Media---x------*/
+
+.footerClass{
+  margin-bottom: 20px;
+}
