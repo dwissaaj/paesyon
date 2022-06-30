@@ -25,18 +25,30 @@ const Article = () => {
                     <Grid>
                         {art?.map((data) => {
                             return (
-                                <ArticleCard linkTo="" content={data.attributes.content} image={data.attributes.urlImg} title={data.attributes.title}/>
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
                             )
                         })}
                     </Grid>
                     <Grid>
-                        
+                    {art?.map((data) => {
+                            return (
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                            )
+                        })}
                     </Grid> 
                     <Grid>
-                        
+                    {art?.map((data) => {
+                            return (
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                            )
+                        })}
                     </Grid> 
                     <Grid>
-                        
+                    {art?.map((data) => {
+                            return (
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                            )
+                        })}
                     </Grid>              
                 </Grid>
             </SwiperSlide>
@@ -44,16 +56,32 @@ const Article = () => {
             <Grid>
                 <Grid sx={{display:'flex',padding:2,justifyContent:'space-evenly'}}>
                     <Grid>
-                       
+                    {art?.map((data) => {
+                            return (
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                            )
+                        })}
                     </Grid>
                     <Grid>
-                       
+                    {art?.map((data) => {
+                            return (
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                            )
+                        })}
                     </Grid> 
                     <Grid>
-                       
+                    {art?.map((data) => {
+                            return (
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                            )
+                        })}
                     </Grid> 
                     <Grid>
-                  
+                    {art?.map((data) => {
+                            return (
+                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                            )
+                        })}
                     </Grid>              
                 </Grid>
                 </Grid>

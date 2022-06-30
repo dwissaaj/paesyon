@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-
+import { BrowserRouter as Router,Link} from "react-router-dom";
 
 const ArticleCard = (props) => {
   return ( 
@@ -15,7 +15,7 @@ const ArticleCard = (props) => {
                   <p className='cardArt'>{props.content}</p>
           </CardContent>
           <CardActions>
-              <Router>
+                <Router>
                   <Link className='cardLink' to={props.linkTo}>Read More..</Link>
               </Router>
           </CardActions>
