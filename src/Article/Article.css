@@ -71,3 +71,11 @@
     color: var(--hover-color);
 }
 
+.cardArtTitle{
+    font-family: 'Merriweather';
+    font-weight: bold;
+    color: White;
+    font-size: 50px;
+    text-align: center;
+
+}

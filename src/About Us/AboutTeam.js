@@ -45,13 +45,10 @@ const AboutTeam = () => {
           </div>
           <div>
             <p className="text-sectionAboutTeam">
-              Paesyon was built by 4 people, namely Kevin Usmayadhy Wijaya, Esa
-              Noer Fadhila, Dwi Setyo Aji, and Dhaneswara
-              L P. The types of fashion trends today are increasingly diverse,
-              many people are confused about matching clothes to their tastes.
-              Not everyone confident with their fashion sense. Therefore,
-              Paesyon is here to provide recommendations and articles about
-              trendy outfits.
+              Paesyeon is a website to increasingly your taste of fashion.
+              Paesyeon offers you collection of clothing, accessories, shoes for
+              men and women. Paesyeon is provide the latest information for
+              about trendy outfit for exploring your true style.
             </p>
           </div>
         </div>

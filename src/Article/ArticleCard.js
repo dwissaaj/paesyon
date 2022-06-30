@@ -22,7 +22,7 @@ const ArticleCard = (data) => {
         <p className="cardArt">{data.data?.attributes.content}</p>
       </CardContent>
       <CardActions>
-        <Link to= "/PageArticle" state= {data.data?.attributes}
+        <Link to= "/PageArticle" state={data.data?.attributes}
         >
           Learn More
         </Link>

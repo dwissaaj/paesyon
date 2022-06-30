@@ -28,6 +28,7 @@
     font-weight: bold;
     color: black;
     font-size: 30px;
+    text-align: center;
 
 }
 .cardRecSubTitle{
@@ -35,6 +36,7 @@
     font-weight: bold;
     color: #ECB390;
     font-size: 30px;
+    text-align: center;
 }
 
 .recomenCard{
