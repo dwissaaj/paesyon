@@ -7,7 +7,7 @@ const AboutWeb = () => {
         <div className="settingText-sectionAboutWeb">
           <div>
             <p className="headline-sectionAboutWeb">
-              Choose your favourite to go outfit.
+              Choose your favorite to go outfit.
             </p>
           </div>
           <div>

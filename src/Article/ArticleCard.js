@@ -21,7 +21,7 @@ const ArticleCard = (data) => {
         <p className="cardTitle">{data.data?.attributes.title}</p>
         <p className="cardArt">{data.data?.attributes.content}</p>
       </CardContent>
-      <CardActions>
+      <CardActions className="fontLearnMore">
         <Link to= "/PageArticle" state={data.data?.attributes}
         >
           Learn More

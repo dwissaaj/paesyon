@@ -11,32 +11,16 @@ const AboutTeam = () => {
             </div>
             <div>
               <p className="text-visiMisi">
-                We will give you a recommendation clothes. We spill and put the
+                We will give you a recommendation clothes. We put the
                 product here so you can grab it for your everyday outfit.
               </p>
             </div>
           </div>
         </div>
 
-        {/* <img
-          class="image-sectionAboutTeam"
-          src="https://i.imgur.com/mpReeTR.png"
-        /> */}
-        {/* <img
-          class="image-sectionAboutTeam"
-          src="https://i.imgur.com/SutivAw.png"
-        /> */}
-        {/* <img
-          class="image-sectionAboutTeam"
-          src="https://i.imgur.com/gaAieOw.png"
-        /> */}
-        {/* <img
-          class="image-sectionAboutTeam"
-          src="https://i.imgur.com/IYtP44Y.png"
-        /> */}
         <img
           class="image-sectionAboutTeam"
-          src="https://i.imgur.com/Chrj1qN.png"
+          src="https://i.imgur.com/PHBxBzH.png"
         />
 
         <div className="settingText-sectionAboutTeam">
