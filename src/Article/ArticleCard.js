@@ -16,7 +16,7 @@ const ArticleCard = (data) => {
         marginBottom: 7,
       }}
     >
-      <CardMedia component="img" alt="fashion" image={data.data?.attributes.urlImg} />
+      <CardMedia className="imgClass" component="img" alt="fashion" image={data.data?.attributes.urlImg} />
       <CardContent className="cardContent">
         <p className="cardTitle">{data.data?.attributes.title}</p>
         <p className="cardArt">{data.data?.attributes.content}</p>
