@@ -25,7 +25,7 @@ const Article = () => {
                     <Grid>
                         {art?.map((data) => {
                             return (
-                                <ArticleCard content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
+                                <ArticleCard to={data.attributes.title} content={data.attributes.content} urlImg={data.attributes.urlImg} title={data.attributes.title}/>
                             )
                         })}
                     </Grid>
